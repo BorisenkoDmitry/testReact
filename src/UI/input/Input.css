@@ -1,0 +1,22 @@
+.field {
+    padding: 10px 20px;
+    border: 1px solid grey;
+    border-radius: 15px;
+
+    transition-property: border-color, background-color, border-radius;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+}
+.field::placeholder {
+    opacity: 0.3;
+}
+.field:focus-visible {
+    outline: none;
+    border-color: var(--color-promo);
+}
+.field:active {
+    border-radius: 20px;
+}
+.field:hover {
+    background-color: var(--color-grey);
+}

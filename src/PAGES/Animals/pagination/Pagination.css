@@ -1,0 +1,32 @@
+.allanimals__pagination {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.allanimals__pagination__item {
+    margin-right: 20px;
+}
+.allanimals__pagination__btn {
+    padding: 5px 10px;
+    border: 1px solid var(--color-black);
+    line-height: 1;
+    
+    transition-property: background-color, color, border-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+}
+.allanimals__pagination__btn:focus-visible {
+    outline: none;
+    border-color: var(--color-promo);
+}
+.allanimals__pagination__btn:hover,
+.allanimals__pagination__btn.active {
+    background-color: var(--color-black);
+    color: var(--color-promo)
+}
+
+.allanimals__pagination__item:last-child {
+    margin-right: 0;
+}

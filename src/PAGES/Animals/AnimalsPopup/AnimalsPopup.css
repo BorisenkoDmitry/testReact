@@ -1,0 +1,68 @@
+
+.allanimals__popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    opacity: 0;    
+    transition: opacity .3s ease-in-out;
+    display: none;
+}
+.popup--active  {
+    opacity: 1;
+}
+.popup--active .allanimals__popup__content {
+    transform: none;
+}
+
+.allanimals__popup__content {
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    height: 80vh;
+    background-color: var(--color-grey);
+
+    overflow: auto;
+    position: relative;
+    padding: 50px;
+    transform: translateY(-100px);
+    transition: transform .3s ease-in-out;
+}
+.allanimals__popup__content:before,
+.allanimals__popup__content:after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: var(--color-promo);
+    right: 25%;
+    top: 60%;
+    transform: translateY(-50%);
+}
+.allanimals__popup__content:after {
+    width: 20px;
+    height: 20px;
+    top: 80%;
+    right: 15%;
+}
+
+.allanimals__btn__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.allanimals__popup__info {
+    position: relative;
+    z-index: 2;
+}

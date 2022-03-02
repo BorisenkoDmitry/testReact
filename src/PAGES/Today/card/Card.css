@@ -1,0 +1,47 @@
+.animals__card {
+    outline: 1px solid grey;
+    flex: 1 1 23%;
+    padding: 20px;
+    position: relative;
+    transition-property: opacity, background-color, color, outline-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+}
+
+
+.animals__info {
+    font-size: 16px;
+}
+.animals__button {
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: var(--color-promo);
+    font-size: 20px;
+
+}
+.animals__text {
+    margin: 0;
+}
+.animals__button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.animals__card:focus-within {
+    outline-color: var(--color-promo);
+}
+.animals__button:focus-visible {
+    outline: none;
+}
+
+.animals__card:hover {
+    background-color: #333;
+    color: #fff;
+}
+.animals__card:active {
+    opacity: 0.9;
+}

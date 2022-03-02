@@ -1,0 +1,28 @@
+.login__form {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 500px;
+    margin: 0 auto;
+}
+.login__field {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.login__btn {
+    max-width: max-content;
+    margin: 0;
+    max-width: 200px;
+    width: 100%;
+}
+
+.login__h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: var(--color-black)
+}
+
+.login__error {
+    color: red;
+}

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Raleway";
+  src: 
+    url("/public/fonts/Raleway-Bold.woff") format("woff"),
+    url("/public/fonts/Raleway-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Raleway";
+  src: 
+    url("/public/fonts/Raleway-Regular.woff") format("woff"),
+    url("/public/fonts/Raleway-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway",Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button,
+input,
+textarea {
+  font-family: inherit;
+  padding: 0;
+  border: none;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+:root {
+  --color-promo: orange;
+  --color-grey: rgb(240, 240, 240);
+  --color-black: #333;
+}

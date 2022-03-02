@@ -1,0 +1,29 @@
+.home__h1 {
+    font-size: 120px;
+    color: var(--color-promo);
+    margin: 0;
+}
+.home__text {
+    font-size: 20px;
+}
+
+.home__container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    position: relative;
+}
+
+.home__container::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-image: url("http://localhost:3000/dog.webp");
+    background-size: contain;
+    background-position: top 25% left 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}

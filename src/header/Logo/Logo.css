@@ -1,0 +1,10 @@
+.header__logo {
+    font-size: 14px;
+    color: var(--color-promo);
+
+    display: flex;
+    align-items: center;
+}
+.header__logo svg {
+    margin-right: 10px;
+}
